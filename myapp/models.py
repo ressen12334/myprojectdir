@@ -24,3 +24,11 @@ class Suguan(models.Model):
     day = models.CharField(max_length=100)
     locale = models.CharField(max_length=100)
 
+class Credential(models.Model):
+    lvm = models.CharField(null=True, blank=True, max_length=3)
+    lcode = models.CharField(null=True, blank=True,max_length=3)
+    computer = models.CharField(null=True, blank=True,max_length=30)
+    user = models.CharField(null=True, blank=True,max_length=30)
+    password = models.CharField(null=True, blank=True,max_length=40)
+    bios = models.CharField(null=True, blank=True,max_length=30)
+    note = models.CharField(null=True, blank=True,max_length=40)
